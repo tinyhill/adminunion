@@ -1,0 +1,18 @@
+{
+   "browser_action": {
+      "default_icon": "icon.png",
+      "default_title": "查询该网站的信息",
+      "popup": "popup.html"
+   },
+   "description": "站长军团 Chrome 插件，帮助站长快速获取网站信息。",
+   "icons": {
+      "128": "icon.png",
+      "16": "icon.png",
+      "32": "icon.png",
+      "48": "icon.png"
+   },
+   "name": "站长军团，我的站长我的站！",
+   "permissions": [ "tabs", "http://*/*" ],
+   "update_url": "http://clients2.google.com/service/update2/crx",
+   "version": "2.0.0"
+}

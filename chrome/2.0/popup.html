@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>站长军团 Chrome 插件</title>
+<style>
+iframe {
+	background: url(loading.gif) no-repeat center center;
+	overflow: hidden;
+}
+</style>
+</head>
+<body>
+<iframe src="" width="400" height="430" frameborder="0" scrolling="no" id="chrome-iframe"></iframe>
+<script>
+chrome.tabs.getSelected (null, function (a) {
+
+	var url = a.url.match(/^(([a-z]+):\/\/)?([^\/\?#]+)\/*([^\?#]*)\??([^#]*)#?(\w*)$/i),
+		domain = url[3].replace(/www./, '');
+
+	document.getElementById('chrome-iframe').src = 'http://www.adminunion.com/chrome.php?domain=' + domain;
+
+});
+</script>
+</body>
+</html>
